@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+//***THIS IS THE CORDOVA PLUGIN***
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+//***THIS IS THE CORDOVA PLUGIN***
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private browser: InAppBrowser) {}
 }
+
+
